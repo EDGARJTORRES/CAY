@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@
     --sombra: rgba(0, 0, 0, 0.2);
     --texto: #003049; 
     --corazon: #ff477e; 
+    --corazon-hover: #ffffff; 
 }
 
 body {
@@ -179,7 +181,7 @@ h1 {
 
 /*Scroll personalizado*/
 
-/*
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -190,7 +192,7 @@ h1 {
 
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--cuerpo-sobre);
+    background-color: var(--corazon-hover);
     border-radius: 4px;
 }
 
@@ -198,7 +200,35 @@ h1 {
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--corazon);
 }
-*/
+/* Estilos para el enlace */
+a {
+    font-family: 'Pacifico', cursive; /* Fuente elegante */
+    font-size: 18px;
+    color: #ff69b4; /* Rosa suave */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 10px 20px;
+    background-color: #fff0f5; /* Fondo rosa claro */
+    border: 2px solid #ff69b4; /* Borde rosa suave */
+    border-radius: 30px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Efecto suave al pasar el mouse */
+    display: inline-block; /* Hace que el enlace sea como un botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilo cuando el usuario pasa el mouse */
+  a:hover {
+    background-color: #ff69b4; /* Fondo rosa más intenso */
+    color: #fff; /* El texto en blanco */
+    transform: translateY(-3px); /* Efecto de elevación */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+  }
+  
+  /* Estilo cuando el enlace está enfocado */
+  a:focus {
+    outline: none; /* Elimina el contorno por defecto */
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.6); /* Sombra rosa al enfocar */
+  }
+  
 
 /*Vista celular*/
 
