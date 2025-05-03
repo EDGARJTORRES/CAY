@@ -201,6 +201,10 @@ h1 {
     background-color: var(--corazon);
 }
 /* Estilos para el enlace */
+.boton-centro {
+    display: flex;
+    justify-content: center;
+}
 a {
     font-family: 'Pacifico', cursive; /* Fuente elegante */
     font-size: 18px;
