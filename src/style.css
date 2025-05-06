@@ -13,7 +13,6 @@
 
 body {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
   background-color: var(--dark-color);
@@ -58,7 +57,7 @@ body {
 
 .titulo-feliz__feliz h1 {
   font-family: 'Pacifico', cursive;
-  font-size: clamp(2.5rem, 10vw - 2rem, 3rem);
+  font-size: clamp(3rem, 20vw - 4rem, 4rem);
   color: #ff4081;
   margin: 0;
   text-shadow: 2px 2px #ffc1e3;
@@ -66,13 +65,14 @@ body {
 
 .titulo-feliz__cumpleanos h2 {
   font-family: 'Rubik', sans-serif;
-  font-size: clamp(2rem, 8vw - 1rem, 2.5rem);
+  font-size: clamp(2.5rem, 18vw - 3rem, 3.5rem);
   color: #4dd0e1;
   margin: 0;
   text-shadow: 1px 1px #b2ebf2;
 }
 .flowers {
   transform: scale(0.9);
+  position: relative;
 }
 
 .flower {
