@@ -9,12 +9,13 @@
 <body>
 <body class="not-loaded">
   <div class="night"></div>
-  <audio autoplay loop hidden>
-    <source src="../music/mañanitas.mp3" type="audio/mpeg">
-  </audio>
   <div class="titulo-feliz">
     <div class="titulo-feliz__feliz"><h1>¡Feliz Cumpleaños!</h1></div>
     <div class="titulo-feliz__cumpleanos"><h2> Angie Yaipen</h2></div>
+    <audio id="miAudio" autoplay loop>
+      <source src="../music/mañanitas.mp3" type="audio/mpeg">
+      Tu navegador no soporta el audio.
+    </audio>
   </div>  
   <div class="flowers">
     <div class="flower flower--1">
@@ -313,8 +314,15 @@
     </div>
   </div>
 </body>
-<!-- partial -->
+ 
   <script  src="./script.js"></script>
-
+  <script>
+    window.addEventListener('load', () => {
+      const audio = document.getElementById('miAudio');
+      audio.play().catch(e => {
+        console.log('Autoplay bloqueado por el navegador. Se necesita una interacción del usuario.');
+      });
+    });
+  </script>
 </body>
 </html>
