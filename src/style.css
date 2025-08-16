@@ -57,7 +57,7 @@ body {
 
 .titulo-feliz__feliz h1 {
   font-family: 'Pacifico', cursive;
-  font-size: 40px;
+  font-size: 100px;
   color: #ff4081;
   margin: 0;
   text-shadow: 2px 2px #ffc1e3;
@@ -65,7 +65,7 @@ body {
 
 .titulo-feliz__cumpleanos h2 {
   font-family: 'Rubik', sans-serif;
-  font-size: 38px;
+  font-size: 90px;
   color: #4dd0e1;
   margin: 0;
   text-shadow: 1px 1px #b2ebf2;
